@@ -23,6 +23,11 @@ _cache
 .env.development.local
 .env.test.local
 .env.production.local
+
+.envP.local
+.envP.development.local
+.envP.test.local
+.envP.production.local
 log.txt
 
 npm-debug.log*
