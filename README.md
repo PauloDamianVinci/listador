@@ -38,7 +38,7 @@ mayor a $10000."*
 ## **🧾 Instrucciones de instalación**
 
 -  Clonar el repositorio.
--  Navegar al directorio del proyecto. Hay dos carpetas: Server y Client, para el frontend y el backend, respectivamente.
+-  Navegar al directorio del proyecto. Hay dos carpetas de ejecución: Client, para el frontend, y Server para el backend.
 -  Ejecutar `npm install` en ambas carpetas para instalar las dependencias.
 -  Crear un nueva base de datos local en PostgreSQL con el nombre listador. Las dos tablas de operación se crearán automáticamente durante la ejecución del programa.
 
