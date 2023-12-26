@@ -16,14 +16,8 @@ const App = () => {
   return (
     <div>
       <Routes>
-        * <Route path={ROOT} element={<Landing />} />
+        <Route path={ROOT} element={<Landing />} />
         <Route path={HOME} element={<Home />} />
-        {/* <Route path={CREATE} element={<Create />} />
-        <Route path={DETAIL} element={<Detail />} />
-        <Route path={EDIT} element={<Edit />} /> */}
-        {/* <Route path={ABOUT} element={<About />} />
-        <Route path={ERROR} element={<Error />} />
-        <Route path="*" element={<Error />} /> */}
       </Routes>
     </div>
   );

@@ -45,7 +45,7 @@ const Home = () => {
 
 
     // ESTO DEBO RESOLVER: ME DA ERROR Siempre es "Access to XMLHttpRequest at 'https://desafio-bancario.vercel.app/listador/sendfilecuentas' from origin 'https://desafio-bancario-jcw5.vercel.app' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource."
-    axios.post(API_URL_BASE + "/sendfilecuentas", formDataCounts)
+    axios.post(API_URL_BASE + "/accounts", formDataCounts)
       .then(response => {
         console.log("Respuesta!!!: ", response.data);
         if (response.data.rx === "ok") {
@@ -53,7 +53,7 @@ const Home = () => {
           console.log("Procesando archivo de movimientos...");
           const formDataMov = new FormData();
           formDataMov.append('file', selectedFileMovim);
-          return axios.post(API_URL_BASE + "/sendfilemovim", formDataMov)
+          return axios.post(API_URL_BASE + "/movim", formDataMov)
         } else {
           console.log("ERR: ", response.data);
           console.log(response.data.msg);
@@ -65,7 +65,7 @@ const Home = () => {
           console.log("-> Archivo cargado correctamente. ", response.data.total, " registros procesados");
           console.log("-> Cuentas con saldo negativo: ", response.data.totalNeg, ". Saldos menores a -10.000: ", response.data.menoresDiezMil);
           console.log("Generando bajada de archivo Errores.dat...");
-          return axios.get(API_URL_BASE + "/sendresults")
+          return axios.get(API_URL_BASE + "/results")
         } else {
           console.log("ERR2: ", response.data);
           console.log(response.data.msg);
