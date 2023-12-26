@@ -46,7 +46,7 @@ mayor a $10000."*
 
 -  Ejecutar `npm start` en la carpeta Server (backend).
 -  Ejecutar `npm run dev` en la carpeta Client (frontend).
--  Con un navegador web, ir al sitio http://localhost:5173/.
+-  Navegar al sitio http://localhost:5173/.
 -  Seguir las indicaciones del programa para seleccionar los archivos de entrada.
 -  Presionar el botón **Iniciar proceso**.
 -  El resultado final será la descarga automática del archivo Errores.dat, el cual se podrá acceder con cualquier visualizador de archivos. El tiempo de finalización del proceso puede variar, dependiendo de la cantidad de registros a procesar.
