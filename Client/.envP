@@ -1,0 +1,4 @@
+VITE_API_URL_BASE = https://desafio-bancario.vercel.app/listador
+VITE_ROOT = /
+VITE_HOME = /home
+VITE_IMG_LAND = https://res.cloudinary.com/dvptbowso/image/upload/v1698325374/PI_Videogames/kz8p9lhd8um6gygfaiiw.jpg
