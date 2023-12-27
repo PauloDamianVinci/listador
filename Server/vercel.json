@@ -8,7 +8,7 @@
     ],
     "headers": [
         {
-            "source": "/listador/accounts",
+            "source": "/accounts",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Credentials",
