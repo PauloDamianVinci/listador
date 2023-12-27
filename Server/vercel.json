@@ -9,7 +9,7 @@
     "routes": [
         {
             "src": "/listador/(.*)",
-            "dest": "./index.js",
+            "dest": "/",
             "methods": [
                 "GET",
                 "POST",
