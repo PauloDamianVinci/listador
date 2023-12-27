@@ -8,7 +8,7 @@
     ],
     "headers": [
         {
-            "source": "/accounts",
+            "src": "/accounts",
             "headers": [
                 {
                     "key": "Access-Control-Allow-Credentials",
