@@ -55,32 +55,8 @@ const Home = () => {
     let totLess = 0;
     // Anexo el archivo para ser enviado:
     const formDataCounts = new FormData();
-    //formDataCounts.append('file', selectedFileCuentas);
-
-    formDataCounts.set('file', selectedFileCuentas);
-    //https://listador.vercel.app/listador/accounts
-    //https://listador.vercel.app/listador/accounts
-
-    // fetch(API_URL_BASE + "/accounts", {
-    //   method: 'POST',
-    //   body: selectedFileCuentas,
-    //   // 👇 Set headers manually for single file upload
-    //   headers: {
-    //     'content-type': selectedFileCuentas.type,
-    //     'content-length': `${selectedFileCuentas.size}`, // 👈 Headers need to be a string
-    //   },
-    // })
-
-    //axios.post("https://listador.vercel.app/listador/accounts/", formDataCounts)
-    //axios.post(API_URL_BASE + "/accounts", formDataCounts) // envío por Axios al backend
-
-    //axios.post("https://listador.vercel.app/listador/accounts", selectedFileCuentas, {
-
-    axios.post(API_URL_BASE + "/accounts/", selectedFileCuentas, {// envío por Axios al backend
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    })
+    formDataCounts.append('file', selectedFileCuentas);
+    axios.post(API_URL_BASE + "/accounts", formDataCounts) // envío por Axios al backend
       .then(responseAcc => {
         if (responseAcc.data.rx === "ok") {
           totAcc = responseAcc.data.total;
