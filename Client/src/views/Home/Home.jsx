@@ -57,6 +57,7 @@ const Home = () => {
     const formDataCounts = new FormData();
     formDataCounts.append('file', selectedFileCuentas);
     //https://listador.vercel.app/listador/accounts
+    //https://listador.vercel.app/listador/accounts
 
     axios.post("https://listador.vercel.app/listador/accounts", formDataCounts) // envío por Axios al backend
       //axios.post(API_URL_BASE + "/accounts", formDataCounts) // envío por Axios al backend
