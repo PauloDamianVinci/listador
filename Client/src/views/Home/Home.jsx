@@ -54,7 +54,6 @@ const Home = () => {
     let totNeg = 0;
     let totLess = 0;
     // Anexo el archivo para ser enviado:
-
     const formDataCounts = new FormData();
     formDataCounts.append('file', selectedFileCuentas);
     axios.post(API_URL_BASE + "/accounts", formDataCounts) // envío por Axios al backend
