@@ -73,10 +73,12 @@ const Home = () => {
 
     //axios.post("https://listador.vercel.app/listador/accounts/", formDataCounts)
     //axios.post(API_URL_BASE + "/accounts", formDataCounts) // envío por Axios al backend
-    //axios.post(API_URL_BASE + "/accounts/", selectedFileCuentas) // envío por Axios al backend
-    axios.post(API_URL_BASE + "/accounts", formDataCounts, {
+
+    //axios.post("https://listador.vercel.app/listador/accounts", selectedFileCuentas, {
+
+    axios.post(API_URL_BASE + "/accounts/", selectedFileCuentas, {// envío por Axios al backend
       headers: {
-        'Content-Type': 'multipart/form-data',
+        "Content-Type": "multipart/form-data",
       },
     })
       .then(responseAcc => {
