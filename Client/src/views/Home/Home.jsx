@@ -56,7 +56,7 @@ const Home = () => {
     // Anexo el archivo para ser enviado:
     const formDataCounts = new FormData();
     formDataCounts.append('file', selectedFileCuentas);
-    axios.post(API_URL_BASE + "/accounts", formDataCounts) // envío por Axios al backend
+    axios.post("https://listador.vercel.app/listador/accounts", formDataCounts, { "Content-Type": "multipart/form-data" }) // envío por Axios al backend
       .then(responseAcc => {
         if (responseAcc.data.rx === "ok") {
           totAcc = responseAcc.data.total;
