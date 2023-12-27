@@ -12,6 +12,8 @@ server.use((req, res, next) => {
     );
     res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE");
     next();
+
+    if (req.method === 'OPTIONS') { return res.status(200).json(({ body: "OK" })) }
 });
 // Middleware para manejar formato json (body):
 server.use(express.json());
