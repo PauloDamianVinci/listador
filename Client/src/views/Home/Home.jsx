@@ -82,16 +82,6 @@ const Home = () => {
       })
       .then(responseSend => {
         // Creo un pedido de bajada con el contenido del archivo a descargar:
-        // const blob = new Blob([responseSend.data], { type: 'text/plain' });
-        // const link = document.createElement('a');
-        // link.href = window.URL.createObjectURL(blob);
-        // link.download = 'Errores.dat';
-        // // Simulo el clic en el enlace para iniciar la descarga:
-        // document.body.appendChild(link);
-        // link.click();
-        // // Limpio el enlace y libero recursos:
-        // document.body.removeChild(link);
-        // window.URL.revokeObjectURL(link.href);
         const blob = new Blob([responseSend.data], { type: 'text/plain' });
         const url = window.URL.createObjectURL(blob);
         const link = document.createElement('a');
@@ -99,8 +89,6 @@ const Home = () => {
         link.download = 'Errores.dat';
         link.click();
         window.URL.revokeObjectURL(url);
-
-
         setMsgLoad("-> Archivo descargado.");
         setLoadingFile(false);
         toast.success((t) => (
