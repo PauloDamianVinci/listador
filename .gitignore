@@ -28,6 +28,7 @@ _cache
 .envP.development.local
 .envP.test.local
 .envP.production.local
+.envP
 log.txt
 
 npm-debug.log*
