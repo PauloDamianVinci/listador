@@ -3,7 +3,7 @@
 
 # **Listador**
 
-Este proyecto individual es la resolución de un desafío técnico para la empresa [Consultoría Global](https://www.consultoriaglobal.com.ar/) . La presentación del mismo es la siguiente:
+Este proyecto individual es la resolución de un desafío técnico para la empresa [Consultoría Global](https://www.consultoriaglobal.com.ar/). La presentación del mismo es la siguiente:
 
 *"Por un error en el proceso, se permitió realizar extracciones (varias para la misma cuenta) sin
 controlar si la cuenta tenía monto suficiente en el Saldo.
